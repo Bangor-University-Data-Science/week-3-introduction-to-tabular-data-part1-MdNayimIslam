@@ -10,9 +10,6 @@ def create_feature_type_dict(df):
     Returns:
         dict: A dictionary classifying features into numerical and categorical types.
     """
-    # If input is a dictionary, convert it to a DataFrame
-    if isinstance(df, dict):
-        df = pd.DataFrame(df)
 
     feature_types = {
         'numerical': {

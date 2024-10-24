@@ -11,8 +11,4 @@ def get_numerical_df(df, numerical_features):
     Returns:
         pd.DataFrame: DataFrame containing only numerical features.
     """
-    # If input is a dictionary, convert it to a DataFrame
-    if isinstance(df, dict):
-        df = pd.DataFrame(df)
-
     return df[numerical_features]

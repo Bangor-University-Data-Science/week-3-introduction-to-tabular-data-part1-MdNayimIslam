@@ -11,10 +11,6 @@ def display_unique_values(df, categorical_features):
     Returns:
         dict: A dictionary where keys are feature names and values are the unique values.
     """
-    # If input is a dictionary, convert it to a DataFrame
-    if isinstance(df, dict):
-        df = pd.DataFrame(df)
-
     unique_values = {}
     for feature in categorical_features:
         if feature in df.columns:
